@@ -1,16 +1,15 @@
 ---
 Name: silverstrap
-After:
-  - framework
 ---
 Silverstrap:
-  classes:
-    group: form-group
-    holder: col-xs-8 col-sm-6 col-md-4
-    small_holder: col-xs-4 col-sm-3 col-md-2
-    control: form-control
-    label: control-label col-xs-4 col-sm-offset-1 col-sm-3
-    small_label: control-label
-    right_label: control-label col-xs-4 col-sm-3
-    small_right_label: control-label
-    no_label: col-xs-offset-4 col-sm-offset-4
+  layouts:
+    default:
+      group: form-group
+      holder: col-xs-8 col-sm-6 col-md-4
+      small_holder: col-xs-4 col-sm-3 col-md-2
+      control: form-control
+      label: control-label col-xs-4 col-sm-offset-1 col-sm-3
+      small_label: control-label
+      right_label: control-label col-xs-4 col-sm-3
+      small_right_label: control-label
+      no_label: col-xs-offset-4

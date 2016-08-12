@@ -21,8 +21,6 @@
         "silverstripe/framework": "~3.1"
     },
     "extra": {
-        "installer-paths": {
-            "silverstrap/": ["entidi/silverstrap-module"]
-        }
+        "installer-name": "silverstrap"
     }
 }

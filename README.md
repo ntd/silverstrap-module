@@ -24,6 +24,7 @@ take a look at the [silverstrap documentation](http://silverstripe.entidi.com/th
 Other documentation
 -------------------
 
+* [Usage](docs/en/usage.md)
 * [Contributing](CONTRIBUTING.md)
 * [BSD license](LICENSE.md)
 * [ChangeLog](CHANGELOG.md)
