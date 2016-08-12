@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Provide a set of tags to be used by the silverstrap templates.
- *
- * An example are the default classes for input and label elements on
- * the forms.
+ * Provide access to the layout used by the silverstrap templates.
  *
  * @package silverstrap
  * @subpackage code
@@ -13,14 +10,29 @@ class Silverstrap extends Object implements TemplateGlobalProvider
 {
     /**
      * @config
+     * SilverStrap layouts.
      */
-    private static $classes;
+    private static $layouts;
 
 
+    /**
+     * Return the proper layout, depending on the controller.
+     *
+     * Check `docs/en/usage.md` to know the exact algorithm used to
+     * look up the proper layout.
+     */
     public static function silverstrap_settings()
     {
-        $data = Config::inst()->get(__CLASS__, 'classes');
-        return ArrayData::create($data);
+        $controller = Director::get_current_page();
+        $layouts    = Config::inst()->get(__CLASS__, 'layouts');
+        if (array_key_exists($controller->SilverstrapLayout, $layouts)) {
+            $layout = $controller->SilverstrapLayout;
+        } elseif (array_key_exists($controller->class, $layouts)) {
+            $layout = $controller->class;
+        } else {
+            $layout = 'default';
+        }
+        return ArrayData::create($layouts[$layout]);
     }
 
     public static function get_template_global_variables()
