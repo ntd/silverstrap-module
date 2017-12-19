@@ -1,7 +1,14 @@
 <?php
 
+namespace eNTiDi\SilverStrap;
+
+use SilverStripe\Config;
+use SilverStripe\Control\Director;
+use SilverStripe\View\ArrayData;
+use SilverStripe\View\TemplateGlobalProvider;
+
 /**
- * Provide access to the layout used by the silverstrap templates.
+ * Provide access to the layout used by the SilverStrap theme.
  *
  * @package silverstrap
  * @subpackage code

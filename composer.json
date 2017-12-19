@@ -3,8 +3,14 @@
     "description": "A helper module for the silverstrap theme",
     "type": "silverstripe-module",
     "homepage": "http://silverstripe.entidi.com/themes/",
-    "keywords": ["silverstripe", "bootstrap", "silverstrap", "theme", "module"],
     "license": "BSD-2-Clause",
+    "keywords": [
+        "silverstripe",
+        "bootstrap",
+        "silverstrap",
+        "theme",
+        "module"
+    ],
     "authors": [
         {
             "name": "Nicola Fontana",
@@ -18,7 +24,12 @@
         "source": "https://github.com/ntd/silverstrap-module"
     },
     "require": {
-        "silverstripe/framework": "~3.1"
+        "silverstripe/framework": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "eNTiDi\\SilverStrap\\": "src/"
+        }
     },
     "extra": {
         "installer-name": "silverstrap"
