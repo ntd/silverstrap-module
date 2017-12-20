@@ -13,7 +13,7 @@ use SilverStripe\View\TemplateGlobalProvider;
  * @package silverstrap
  * @subpackage code
  */
-class Silverstrap implements TemplateGlobalProvider
+class SilverstrapModule implements TemplateGlobalProvider
 {
     /**
      * Array of SilverStrap layouts available.
