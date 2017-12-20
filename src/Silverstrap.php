@@ -1,6 +1,6 @@
 <?php
 
-namespace eNTiDi\SilverStrap;
+namespace eNTiDi;
 
 use SilverStripe\Config;
 use SilverStripe\Control\Director;
