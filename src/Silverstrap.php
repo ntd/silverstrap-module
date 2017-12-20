@@ -16,8 +16,7 @@ use SilverStripe\View\TemplateGlobalProvider;
 class Silverstrap extends Object implements TemplateGlobalProvider
 {
     /**
-     * @config
-     * SilverStrap layouts.
+     * Array of SilverStrap layouts available.
      */
     private static $layouts;
 
@@ -44,8 +43,8 @@ class Silverstrap extends Object implements TemplateGlobalProvider
 
     public static function get_template_global_variables()
     {
-        return array(
+        return [
             'Silverstrap' => 'silverstrap_settings',
-        );
+        ];
     }
 }

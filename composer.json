@@ -1,7 +1,7 @@
 {
     "name": "entidi/silverstrap-module",
+    "type": "silverstripe-vendormodule",
     "description": "A helper module for the silverstrap theme",
-    "type": "silverstripe-module",
     "homepage": "http://silverstripe.entidi.com/themes/",
     "license": "BSD-2-Clause",
     "keywords": [
@@ -24,14 +24,17 @@
         "source": "https://github.com/ntd/silverstrap-module"
     },
     "require": {
-        "silverstripe/framework": "~4.0"
+        "silverstripe/framework": "^4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "squizlabs/php_codesniffer": "^3.0"
     },
     "autoload": {
         "psr-4": {
             "eNTiDi\\SilverStrap\\": "src/"
         }
     },
-    "extra": {
-        "installer-name": "silverstrap"
-    }
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
