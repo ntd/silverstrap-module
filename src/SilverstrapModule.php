@@ -2,8 +2,8 @@
 
 namespace eNTiDi;
 
-use SilverStripe\Config;
 use SilverStripe\Control\Director;
+use SilverStripe\Core\Config\Config;
 use SilverStripe\View\ArrayData;
 use SilverStripe\View\TemplateGlobalProvider;
 
