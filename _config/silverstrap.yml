@@ -1,7 +1,7 @@
 ---
-Name: silverstrapmodule
+Name: silverstrap
 ---
-eNTiDi\SilverstrapModule:
+eNTiDi\Silverstrap\Configuration:
   layouts:
     default:
       group: form-group

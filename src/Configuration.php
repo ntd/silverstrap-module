@@ -1,6 +1,6 @@
 <?php
 
-namespace eNTiDi;
+namespace eNTiDi\SilverStrap;
 
 use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
@@ -13,7 +13,7 @@ use SilverStripe\View\TemplateGlobalProvider;
  * @package silverstrap
  * @subpackage code
  */
-class SilverstrapModule implements TemplateGlobalProvider
+class Configuration implements TemplateGlobalProvider
 {
     /**
      * Array of SilverStrap layouts available.
