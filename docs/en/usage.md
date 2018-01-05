@@ -5,7 +5,7 @@ This module basically provides access to the layout used by the
 [silverstrap](http://silverstripe.entidi.com/themes/#TOC-1) templates
 for generating a form.
 
-A layout in SilverStrap is a set of classes to be applied to the
+A layout in Silverstrap is a set of classes to be applied to the
 various components of the form. The default layout (`default`) keeps
 the form fields inside a single column somewhat in the center of the
 page.
@@ -16,7 +16,7 @@ layout, the code will check the current controller. If a layout
 correspondent to `$controller->SilverstrapLayout` or
 `$controller->class` is found, that one will be used instead.
 
-Suppose for example you have this class:
+Consider for example the following code:
 
     class MyController extends Controller
     {
@@ -27,20 +27,22 @@ Suppose for example you have this class:
         ...
     }
 
-When rendering a form using the SilverStrap templates, firstly the
-layout `multicol` will be used. If it does not exist, the layout
-`MyController` will be used instead. If neither exist, it will be
-used the `default` layout.
+When rendering a form using the Silverstrap theme, the first layout that exists
+from the following ones will be used:
+
+- **multicol**, picked up from `$controller->SilverstrapLayout`;
+- **MyController**, the name of the controller class;
+- **default**, the fallback layout.
 
 On the YAML side, an example implementation of the `multicol` layout
 could be:
 
     ---
-    Name: customlayout
+    Name: multicol
     After:
       - silverstrap
     ---
-    Silverstrap:
+    eNTiDi\Silverstrap\Configuration:
       layouts:
         multicol:
           group: form-group col-md-6 col-lg-4
