@@ -13,8 +13,9 @@ flawless user and developer experience.
 Installation
 ------------
 
-If you use [composer](https://getcomposer.org/), the following command
-will install everything you need:
+    composer require entidi/silverstripe-autotoc
+
+Manual installation is probably possible but not really tested.
 
     composer require entidi/silverstrap
 
@@ -26,6 +27,7 @@ Other documentation
 
 * [Usage](docs/en/usage.md)
 * [Contributing](CONTRIBUTING.md)
+* [Code of Conduct](https://docs.silverstripe.org/en/contributing/code_of_conduct)
 * [BSD license](LICENSE.md)
 * [ChangeLog](CHANGELOG.md)
 * [Support](docs/en/support.md)

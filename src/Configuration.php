@@ -1,16 +1,22 @@
 <?php
 
+namespace eNTiDi\Silverstrap;
+
+use SilverStripe\Control\Director;
+use SilverStripe\Core\Config\Config;
+use SilverStripe\View\ArrayData;
+use SilverStripe\View\TemplateGlobalProvider;
+
 /**
- * Provide access to the layout used by the silverstrap templates.
+ * Provide access to the layout used by the Silverstrap theme.
  *
  * @package silverstrap
  * @subpackage code
  */
-class Silverstrap extends Object implements TemplateGlobalProvider
+class Configuration implements TemplateGlobalProvider
 {
     /**
-     * @config
-     * SilverStrap layouts.
+     * Array of Silverstrap layouts available.
      */
     private static $layouts;
 
@@ -24,7 +30,7 @@ class Silverstrap extends Object implements TemplateGlobalProvider
     public static function silverstrap_settings()
     {
         $controller = Director::get_current_page();
-        $layouts    = Config::inst()->get(__CLASS__, 'layouts');
+        $layouts    = Config::inst()->get(self::class, 'layouts');
         if (array_key_exists($controller->SilverstrapLayout, $layouts)) {
             $layout = $controller->SilverstrapLayout;
         } elseif (array_key_exists($controller->class, $layouts)) {
@@ -37,8 +43,8 @@ class Silverstrap extends Object implements TemplateGlobalProvider
 
     public static function get_template_global_variables()
     {
-        return array(
+        return [
             'Silverstrap' => 'silverstrap_settings',
-        );
+        ];
     }
 }
