@@ -1,6 +1,6 @@
 <?php
 
-namespace eNTiDi\SilverStrap;
+namespace eNTiDi\Silverstrap;
 
 use SilverStripe\Control\Director;
 use SilverStripe\Core\Config\Config;
@@ -8,7 +8,7 @@ use SilverStripe\View\ArrayData;
 use SilverStripe\View\TemplateGlobalProvider;
 
 /**
- * Provide access to the layout used by the SilverStrap theme.
+ * Provide access to the layout used by the Silverstrap theme.
  *
  * @package silverstrap
  * @subpackage code
@@ -16,7 +16,7 @@ use SilverStripe\View\TemplateGlobalProvider;
 class Configuration implements TemplateGlobalProvider
 {
     /**
-     * Array of SilverStrap layouts available.
+     * Array of Silverstrap layouts available.
      */
     private static $layouts;
 
