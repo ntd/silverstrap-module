@@ -30,7 +30,7 @@ class Configuration implements TemplateGlobalProvider
     public static function silverstrap_settings()
     {
         $controller = Director::get_current_page();
-        $layouts    = Config::inst()->get(__CLASS__, 'layouts');
+        $layouts    = Config::inst()->get(self::class, 'layouts');
         if (array_key_exists($controller->SilverstrapLayout, $layouts)) {
             $layout = $controller->SilverstrapLayout;
         } elseif (array_key_exists($controller->class, $layouts)) {
