@@ -6,7 +6,7 @@
  * @package silverstrap
  * @subpackage code
  */
-class Silverstrap extends Object implements TemplateGlobalProvider
+class Silverstrap implements TemplateGlobalProvider
 {
     /**
      * @config
