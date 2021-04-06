@@ -13,14 +13,11 @@ flawless user and developer experience.
 Installation
 ------------
 
-    composer require entidi/silverstripe-autotoc
-
-Manual installation is probably possible but not really tested.
-
     composer require entidi/silverstrap
 
-For more details, e.g. for instruction on how to install it manually,
-take a look at the [silverstrap documentation](http://silverstripe.entidi.com/themes/#TOC-1).
+Manual installation is probably possible but not really tested. For more
+details, e.g. for instruction on how to install it manually, take a look
+at the [silverstrap documentation](http://silverstripe.entidi.com/themes/#TOC-1).
 
 Other documentation
 -------------------
