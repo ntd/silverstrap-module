@@ -2,7 +2,7 @@
     "name": "entidi/silverstrap-module",
     "type": "silverstripe-vendormodule",
     "description": "A helper module for the silverstrap theme",
-    "homepage": "http://silverstripe.entidi.com/themes/",
+    "homepage": "https://github.com/ntd/silverstrap-module",
     "license": "BSD-2-Clause",
     "keywords": [
         "silverstripe",
@@ -15,26 +15,26 @@
         {
             "name": "Nicola Fontana",
             "email": "ntd@entidi.it",
-            "homepage": "http://www.entidi.com/",
+            "homepage": "https://www.entidi.com/",
             "role": "Developer"
         }
     ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "support": {
         "issues": "https://github.com/ntd/silverstrap-module/issues",
         "source": "https://github.com/ntd/silverstrap-module"
     },
     "require": {
-        "silverstripe/framework": "^4.0"
+        "silverstripe/framework": "^5.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "squizlabs/php_codesniffer": "^3.0"
+        "phpunit/phpunit": "^9.6",
+        "squizlabs/php_codesniffer": "^3.7"
     },
     "autoload": {
         "psr-4": {
             "eNTiDi\\Silverstrap\\": "src/"
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
