@@ -2,7 +2,7 @@
     "name": "entidi/silverstrap-module",
     "type": "silverstripe-vendormodule",
     "description": "A helper module for the silverstrap theme",
-    "homepage": "http://silverstripe.entidi.com/themes/",
+    "homepage": "https://github.com/ntd/silverstrap-module",
     "license": "BSD-2-Clause",
     "keywords": [
         "silverstripe",

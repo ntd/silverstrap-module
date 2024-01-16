@@ -2,8 +2,8 @@ Usage
 -----
 
 This module basically provides access to the layout used by the
-[silverstrap](http://silverstripe.entidi.com/themes/#TOC-1) templates
-for generating a form.
+[Silverstrap](https://github.com/ntd/silverstrap) templates for
+generating a form.
 
 A layout in Silverstrap is a set of classes to be applied to the
 various components of the form. The default layout (`default`) keeps
